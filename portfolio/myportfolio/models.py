@@ -15,11 +15,16 @@ class Project(models.Model):
     github_link=models.URLField(max_length=255)
     live_demo_link=models.URLField(max_length=255)
 
+    class Meta:
+        ordering=['title',]
+        get_latest_by='title'
+
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
         return reverse('project_details',kwargs={'pk':self.pk})
 
-    
+
+
 
