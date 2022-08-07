@@ -1,0 +1,370 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{%  static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white position-relative">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand text-secondary">
+                <h1 class="display-4 text-uppercase">FLORIN.</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0 pr-3 border-right">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">Projects</a>
+                    <a href="service.html" class="nav-item nav-link">Curiculum Vitae</a>
+                    <a href="price.html" class="nav-item nav-link">About</a>
+                    <a href="price.html" class="nav-item nav-link">Contact</a>
+
+
+
+                </div>
+                <div class="d-none d-lg-flex align-items-center pl-4">
+                    <i class="fa fa-2x fa-mobile-alt text-primary mr-3"></i>
+                    <div>
+                        <h6 class="text-body text-uppercase mb-1"><small>Call Anytime</small></h6>
+                        <h6 class="m-0">+40739371862</h6>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 px-0" style="margin-bottom: 90px;">
+        <div class="row mx-0 align-items-center">
+            <div class="col-lg-6 px-md-5 text-center text-lg-left">
+                <h1 class="display-2 text-uppercase mb-3">PYTHON DEVELOPER</h1>
+                <p class="text-dark mb-4">Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed sit.
+                    Ipsum dolor no justo dolor et, lorem ut dolor erat dolore sed ipsum at ipsum nonumy amet. Clita
+                    lorem dolore sed stet et est justo dolore.</p>
+                <a href="" class="btn btn-dark text-uppercase mt-1 py-3 px-5">READ MORE</a>
+            </div>
+            <div class="col-lg-6 px-0 text-right">
+                <img class="img-fluid mt-5 mt-lg-0" src="{% static 'img/florin.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img class="img-fluid mb-4 mb-lg-0" src="{% static 'img/about.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-4 text-uppercase mb-4">MY DEVELOPER JOURNEY</h1>
+                    <h5 class="text-uppercase text-primary mb-3">Clita elitr et amet et ipsum sea. Ipsum stet kasd ea et no est duo diam. Lorem dolores eos ut nonumy ipsum sit clita lorem no amet dolor dolore, stet sit dolor justo</h5>
+                    <p class="mb-4">Eirmod est dolor nonumy sea amet dolore erat sit dolor et dolor vero. Tempor ipsum at justo amet at ipsum justo. Aiam kasd sea sit dolor duo elitr dolor amet, justo est ipsum amet dolor ut ipsum. Labore diam et nonumy amet dolores. Volup sit labore dolores erat, magna justo sed lorem kasd ea dolor. Labore sit clita invidunt, est dolores lorem sed ipsum kasd no amet ipsum.</p>
+                    <a href="" class="btn btn-primary text-uppercase py-3 px-5">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+     <!-- Portfolio Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-4 text-uppercase text-center mb-5">Visit Our Projects</h1>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-outline-dark text-uppercase py-2 px-4 active" data-filter="*">
+                            <i class="fa fa-star text-primary mr-2"></i>All
+                        </li>
+                        <li class="btn btn-outline-dark text-uppercase py-2 px-4" data-filter=".first">
+                            <i class="fa fa-laptop-code text-primary mr-2"></i>Design
+                        </li>
+                        <li class="btn btn-outline-dark text-uppercase py-2 px-4" data-filter=".second">
+                            <i class="fa fa-mobile-alt text-primary mr-2"></i>Development
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-1.jpg' %}" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-2.jpg' %}" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-3.jpg' %}" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-4.jpg' %}" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-5.jpg' %}" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-6.jpg' %}" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+
+
+    <!-- Technologies Start -->
+    <div class="container-fluid py-4">
+        <div class="container pt-4 pb-3">
+            <h1 class="display-4 text-uppercase text-center mb-5">TECHNOLOGIES</h1>
+            <div class="row">
+                <div class="col-lg-2 mb-2">
+
+                        <img class="img-fluid w-100 h-40" src="{% static 'img/python.png' %}" alt="">
+                        <h4 class="text-uppercase mb-4 " align="center">PYTHON </h4>
+
+
+                </div>
+                <div class="col-lg-2 mb-2">
+
+                         <img class="img-fluid w-100 h-37" src="{% static 'img/django.jpg' %}" alt="">
+                        <h4 class="text-uppercase mb-4" align="center" >DJANGO<span class="d-block text-body " >FRAMEWORK</span></h4>
+
+
+                </div>
+                <div class="col-lg-2 mb-2">
+
+                        <img class="img-fluid w-100 h-40" src="{% static 'img/rest.jpg' %}" alt="">
+                        <h4 class="text-uppercase mb-4" align="center">DJANGO  <span class="d-block text-body">REST FRAMEWORK</span></h4>
+
+
+                </div>
+                <div class="col-lg-2 mb-2">
+
+                        <img class="img-fluid w-100 h-40" src="{% static 'img/pandas.jpg' %}" alt="">
+                        <h4 class="text-uppercase mb-4" align="center">PANDAS <span class="d-block text-body"></span></h4>
+
+
+                </div>
+                <div class="col-lg-2 mb-2">
+
+                        <img class="img-fluid w-100 h-40" src="{% static 'img/mysql.jpg' %}" alt="">
+                        <h4 class="text-uppercase mb-4" align="center">MYSQL <span class="d-block text-body">DATABASE</span></h4>
+
+
+                </div>
+                <div class="col-lg-2 mb-2">
+
+                        <img class="img-fluid w-100 h-40" src="{% static 'img/git.png' %}" alt="">
+                        <h4 class="text-uppercase mb-4" align="center">GITHUB <span class="d-block text-body">DATABASE</span></h4>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+     <div class="container-fluid py-3">
+        <div class="container py-5">
+            <h5 class="display-4 text-uppercase text-center mb-3" >OTHER TECHNOLOGIES USED IN PROJECTS</h5>
+            <div class="row">
+                <div class="col-lg-2 mb-1" >
+
+                            <img class="img-fluid w-70 h-20" src="{% static 'img/selenium.jpg' %}" alt="">
+                            <h4 class="text-uppercase mb-7" align="center">SELENIUM <span class="d-block text-body"> WEB DRIVER</span></h4>
+
+
+                </div>
+                <div class="col-lg-2 mb-2">
+
+                            <img class="img-fluid w-70 h-30" src="{% static 'img/matplot.jpg' %}" alt="">
+                            <h4 class="text-uppercase mb-7" align="center">MAPLOTLIB <span class="d-block text-body"> </span></h4>
+
+
+                </div>
+                 <div class="col-lg-2 mb-2">
+
+                            <img class="img-fluid w-70 h-30" src="{% static 'img/qt.jpg' %}" alt="">
+                            <h4 class="text-uppercase mb-7" align="center">PYQT5 <span class="d-block text-body"> </span></h4>
+
+
+                </div>
+                 <div class="col-lg-2 mb-2">
+
+                            <img class="img-fluid w-70 h-30" src="{% static 'img/pillow.jpg' %}" alt="">
+                            <h4 class="text-uppercase mb-7" align="center">PILLOW <span class="d-block text-body"> </span></h4>
+
+
+                </div>
+                 <div class="col-lg-2 mb-2">
+
+                            <img class="img-fluid w-70 h-30" src="{% static 'img/sk.jpg' %}" alt="">
+                            <h4 class="text-uppercase mb-7" align="center">SCIKIT <span class="d-block text-body"> LEARN</span></h4>
+
+
+                </div>
+
+                 <div class="col-lg-2 mb-2">
+
+                            <img class="img-fluid w-70 h-30" src="{% static 'img/twitter.jpg' %}" alt="">
+                            <h4 class="text-uppercase mb-7" align="center">TWITTER <span class="d-block text-body"> API</span></h4>
+
+
+                </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-3 px-sm-3 px-md-5" style="margin-top: 90px;">
+        <div class="row pt-3">
+            <div class="col-lg-6 col-md-6 mb-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 mt-n2 text-white display-4">FLORIN.</h1>
+                </a>
+                <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                <h6 class="text-uppercase text-white py-2">Follow Me</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+
+                    <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square" href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-white mb-4">Get In Touch</h4>
+                <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                <p><i class="fa fa-map-marker-alt text-white mr-2"></i>Bucharest, Romania</p>
+                <p><i class="fa fa-phone-alt text-white mr-2"></i>+40739371862</p>
+                <p><i class="fa fa-envelope text-white mr-2"></i>corciova.f@gmail.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-white mb-4">Quick Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Home</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Projects</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Curiculum Vitae</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Contact</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="mb-2 text-center text-white-50">&copy; <a href="#">FLORIN.</a>. All Rights Reserved.</p>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

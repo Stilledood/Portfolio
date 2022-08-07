@@ -4,6 +4,18 @@ from django.views.generic import View
 from django.shortcuts import get_object_or_404
 
 
+class GeneralView(View):
+    '''Class to construct a vierw for homepage'''
+    model=Project
+    template_name='base.html'
+
+    def get(self,request):
+        first_projects=Project.objects.all()[:6]
+        return render(request,self.template_name,context={'first_project':first_projects})
+
+
+
+
 
 class ProjectList(View):
     '''Class to construct a view to display all projects'''
@@ -27,4 +39,4 @@ class ProjectDetails(View):
     def get(self,request,pk):
         project=get_object_or_404(self.model,pk=pk)
         return render(request,self.template_name,context={'project':project})
-    
+
