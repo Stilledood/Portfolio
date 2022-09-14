@@ -100,7 +100,7 @@
      <!-- Portfolio Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
-            <h1 class="display-4 text-uppercase text-center mb-5">Visit Our Projects</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Visit My Projects</h1>
             <div class="row">
                 <div class="col-12 text-center mb-2">
                     <ul class="list-inline mb-4" id="portfolio-flters">
@@ -116,17 +116,21 @@
                     </ul>
                 </div>
             </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative rounded overflow-hidden mb-2">
-                        <img class="img-fluid w-100" src="{% static 'img/portfolio-1.jpg' %}" alt="">
-                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-4x fa-plus text-primary"></i>
-                            </a>
+
+                <div class="row portfolio-container">
+                    {% for project in first_projects %}
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                        <div class="position-relative rounded overflow-hidden mb-2">
+                            <img class="img-fluid w-100" src="{{project.main_image.url}}" >
+                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                <a href="{{project.main_image.url}}" data-lightbox="portfolio">
+                                    <i class="fa fa-4x fa-plus text-primary"></i>
+                                </a>
+                            </div>
                         </div>
+                    {% endfor %}
                     </div>
-                </div>
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative rounded overflow-hidden mb-2">
                         <img class="img-fluid w-100" src="{% static 'img/portfolio-2.jpg' %}" alt="">
@@ -229,7 +233,7 @@
                         <img class="img-fluid w-100 h-40" src="{% static 'img/git.png' %}" alt="">
                         <h4 class="text-uppercase mb-4" align="center">GITHUB <span class="d-block text-body">DATABASE</span></h4>
 
-                    
+
                 </div>
             </div>
         </div>

@@ -10,8 +10,8 @@ class GeneralView(View):
     template_name='base.html'
 
     def get(self,request):
-        first_projects=Project.objects.all()[:6]
-        return render(request,self.template_name,context={'first_project':first_projects})
+        first_projects=Project.objects.all()
+        return render(request,self.template_name,context={'first_projects':first_projects})
 
 
 

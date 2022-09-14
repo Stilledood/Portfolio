@@ -9,9 +9,7 @@ class Project(models.Model):
     initial_description=models.TextField()
     project_description=models.TextField()
     summary_description=models.TextField()
-    image1=models.ImageField(upload_to='project_images',default=None)
-    image2=models.ImageField(upload_to='project_images',default=None)
-    image3=models.ImageField(upload_to='project_images',default=None)
+    main_image=models.ImageField(upload_to='project_images',default=None)
     github_link=models.URLField(max_length=255)
     live_demo_link=models.URLField(max_length=255)
 
@@ -24,6 +22,15 @@ class Project(models.Model):
 
     def get_absolute_url(self):
         return reverse('project_details',kwargs={'pk':self.pk})
+
+
+class ProjectImage(models.Model):
+    '''Class to construct a model for projects images-allowing a project to have multiple images associated with'''
+
+    name=models.CharField(max_length=128)
+    image=models.ImageField(upload_to='project_images')
+    project=models.ForeignKey(Project,on_delete=models.CASCADE)
+
 
 
 

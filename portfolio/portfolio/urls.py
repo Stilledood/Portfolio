@@ -17,9 +17,14 @@ from django.contrib import admin
 from django.urls import path,include,re_path
 from myportfolio import urls as portfolio_urls
 from myportfolio.views import GeneralView
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^$',GeneralView.as_view(),name='homepage'),
     re_path(r'^projects/',include(portfolio_urls))
 ]
+if settings.DEBUG:
+    urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
