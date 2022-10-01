@@ -1,0 +1,50 @@
+{% extends parent_template|default:'base.html' %}
+{% block content %}
+<div class="container-fluid py-5 px-0">
+        <h1 class="display-4 text-uppercase text-center mt-5 mb-5">Contact</h1>
+        <div class="row mx-0">
+            <div class="col-12 px-0" style="height: 500px;">
+                <div class="position-relative h-100">
+                    <iframe class="position-relative w-100 h-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182320.95131302546!2d25.954553551114433!3d44.437985292703836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f93abf3cad4f%3A0xac0632e37c9ca628!2sBucure%C8%99ti!5e0!3m2!1sro!2sro!4v1664125919506!5m2!1sro!2sro"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<div class="container-fluid py-5">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light rounded mb-4 px-5" style="height: 150px;">
+                        <i class="fa fa-3x fa-map-marker-alt text-primary mr-3"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-uppercase">My Location</h5>
+                            <p class="m-0">Bucharest,Romania</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light rounded mb-4 px-5" style="height: 150px;">
+                        <i class="fa fa-3x fa-envelope-open text-primary mr-3"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-uppercase">Email Me</h5>
+                            <p class="m-0">corciovaf@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light rounded mb-4 px-5" style="height: 150px;">
+                        <i class="fas fa-3x fa-phone-alt text-primary mr-3"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-uppercase">Call Me</h5>
+                            <p class="m-0">+40739371862</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

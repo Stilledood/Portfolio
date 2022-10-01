@@ -20,7 +20,7 @@
                 <div class="col-lg-6">
                     <h1 class="display-4 text-uppercase mb-4">Project Short Description</h1>
                     <h5 class="text-uppercase text-primary mb-3">{{project.summary_description}}</h5>
-                    <p class="mb-4">{{project.initial_description}}.</p>
+                    <p class="mb-4">{{project.initial_description|linebreaks}}.</p>
                     <br>
                     </br>
                      <br>
@@ -46,8 +46,9 @@
             </div>
             <div class="col-lg-6">
                 <h1 class="display-4 text-uppercase mb-4">TOOLS AND TECHNOLOGIES</h1>
-                <h5 class="text-uppercase text-primary mb-3">{{project.summary_description}}</h5>
-                <p class="mb-4">{{project.initial_description}}.</p>
+                <h5 class="text-uppercase text-primary mb-3">{{project.project_description|slice:'0:18'}}</h5>
+                <p class="mb-1">{{project.project_description|slice:'18:'|linebreaks}}.</p>
+
                 <br>
                 </br>
                  <br>

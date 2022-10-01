@@ -39,6 +39,8 @@ class Project(models.Model):
         return reverse('project_details',kwargs={'pk':self.pk})
 
 
+
+
 class ProjectImage(models.Model):
     '''Class to construct a model for projects images-allowing a project to have multiple images associated with'''
 
