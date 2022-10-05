@@ -23,7 +23,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^$',GeneralView.as_view(),name='homepage'),
+    path('',GeneralView.as_view(),name='homepage'),
     re_path(r'^projects/',include(portfolio_urls)),
     re_path(r'^contact/$',TemplateView.as_view(template_name='contact.html'),name='contact')
 ]
