@@ -21,12 +21,12 @@
                     <h1 class="display-4 text-uppercase mb-4">Project Short Description</h1>
                     <h5 class="text-uppercase text-primary mb-3">{{project.summary_description}}</h5>
                     <p class="mb-4">{{project.initial_description|linebreaks}}.</p>
-                    <br>
-                    </br>
-                     <br>
-                    </br>
+                  
+
+
 
                     <a href="{{project.github_link}}" class="btn btn-primary text-uppercase py-3 px-5"><i class="fa fa-github" style="font-size:24px">&nbsp&nbsp </i>GitHub Code</a>
+                    <br></br>
                     {% if project.live_demo_link %}
                         <a href="{{project.live_demo_link}}" class="btn btn-primary text-uppercase py-3 px-5"><iconify-icon icon="simple-icons:heroku" width="24" height="24"></iconify-icon>&nbsp&nbsp </i>Live Demo</a>
                     {% endif %}
